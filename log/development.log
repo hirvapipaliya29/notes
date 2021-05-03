@@ -9586,3 +9586,159 @@ Processing by NotesController#index as HTML
 Completed 200 OK in 78ms (Views: 69.4ms | ActiveRecord: 5.2ms | Allocations: 10779)
 
 
+Started GET "/notes" for ::1 at 2021-05-03 12:37:48 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 17.9ms | Allocations: 634)
+  [1m[36mNote Load (5.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 20.4ms | Allocations: 973)
+  Rendered notes/index.html.erb within layouts/application (Duration: 68.2ms | Allocations: 3071)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 461.3ms | Allocations: 9536)
+Completed 200 OK in 1005ms (Views: 484.8ms | ActiveRecord: 180.2ms | Allocations: 16363)
+
+
+Started GET "/notes/index" for ::1 at 2021-05-03 12:37:57 +0530
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mNote Load (25.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:65:in `set_note'
+Completed 404 Not Found in 170ms (ActiveRecord: 28.1ms | Allocations: 1571)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Note with 'id'=index):
+  
+app/controllers/notes_controller.rb:65:in `set_note'
+Started GET "/notes/index" for ::1 at 2021-05-03 12:38:14 +0530
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mNote Load (2.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:65:in `set_note'
+Completed 404 Not Found in 67ms (ActiveRecord: 54.7ms | Allocations: 2906)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Note with 'id'=index):
+  
+app/controllers/notes_controller.rb:65:in `set_note'
+Started GET "/notes/index" for ::1 at 2021-05-03 12:38:28 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/notes/index" for ::1 at 2021-05-03 12:38:36 +0530
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mNote Load (2.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:65:in `set_note'
+Completed 404 Not Found in 30ms (ActiveRecord: 16.3ms | Allocations: 2718)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Note with 'id'=index):
+  
+app/controllers/notes_controller.rb:65:in `set_note'
+Started GET "/notes/index" for ::1 at 2021-05-03 12:39:06 +0530
+Processing by NotesController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mNote Load (2.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes" WHERE "notes"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/notes_controller.rb:65:in `set_note'
+Completed 404 Not Found in 31ms (ActiveRecord: 16.9ms | Allocations: 2698)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Note with 'id'=index):
+  
+app/controllers/notes_controller.rb:65:in `set_note'
+Started GET "/notes" for ::1 at 2021-05-03 12:39:09 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 3.5ms | Allocations: 494)
+  [1m[36mNote Load (3.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 5.0ms | Allocations: 815)
+  Rendered notes/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 2312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 8623)
+Completed 200 OK in 71ms (Views: 49.1ms | ActiveRecord: 3.2ms | Allocations: 11289)
+
+
+Started GET "/notes" for ::1 at 2021-05-03 12:40:40 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 2.6ms | Allocations: 494)
+  [1m[36mNote Load (2.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 4.3ms | Allocations: 815)
+  Rendered notes/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 2336)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 8618)
+Completed 200 OK in 80ms (Views: 42.1ms | ActiveRecord: 17.4ms | Allocations: 12500)
+
+
+Started GET "/notes" for ::1 at 2021-05-03 12:40:46 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 2.5ms | Allocations: 374)
+  [1m[36mNote Load (3.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 3.8ms | Allocations: 791)
+  Rendered notes/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 8535)
+Completed 200 OK in 61ms (Views: 55.5ms | ActiveRecord: 3.5ms | Allocations: 9008)
+
+
+Started GET "/notes" for ::1 at 2021-05-03 12:40:47 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 2.9ms | Allocations: 374)
+  [1m[36mNote Load (3.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 5.3ms | Allocations: 791)
+  Rendered notes/index.html.erb within layouts/application (Duration: 18.9ms | Allocations: 2286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 8532)
+Completed 200 OK in 49ms (Views: 44.0ms | ActiveRecord: 3.0ms | Allocations: 9004)
+
+
+Started GET "/notes" for ::1 at 2021-05-03 12:40:48 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 2.5ms | Allocations: 374)
+  [1m[36mNote Load (2.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 3.6ms | Allocations: 791)
+  Rendered notes/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2286)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 8535)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 2.6ms | Allocations: 9007)
+
+
+Started GET "/notes" for ::1 at 2021-05-03 12:40:58 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/notes"):
+  
+Started GET "/notes" for ::1 at 2021-05-03 12:41:15 +0530
+Processing by NotesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering notes/index.html.erb within layouts/application
+  Rendered notes/_form.html.erb (Duration: 4.1ms | Allocations: 494)
+  [1m[36mNote Load (3.1ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/views/notes/index.html.erb:6
+  Rendered collection of notes/_note.html.erb [7 times] (Duration: 4.7ms | Allocations: 815)
+  Rendered notes/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 2335)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 8625)
+Completed 200 OK in 83ms (Views: 44.3ms | ActiveRecord: 16.6ms | Allocations: 12562)
+
+
